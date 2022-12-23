@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/item_notes_bg">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/createDate"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:fontFamily="@font/inter"
+            android:text="Dec, 15 2022" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Cp Roadmap For X" />
+
+        <TextView
+            android:id="@+id/summary"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0.8"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="This is going to be a long text\nfor multiple line with proper line breakThis is going to be a long text\nfor multiple line with proper line breakThis is going to be a long text\nfor multiple line with proper line breakThis is going to be a long text\nfor multiple line with proper line break" />
+
+    </LinearLayout>
+
+</LinearLayout>
